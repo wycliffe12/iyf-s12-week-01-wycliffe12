@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Your Contact Details</legend>
+
+                <p>
+                    <label for="full-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                    >
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Message</legend>
+
+                <p>
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="general">General inquiry</option>
+                        <option value="project">Project collaboration</option>
+                        <option value="feedback">Website feedback</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Write at least 50 characters"
+                        minlength="50"
+                        rows="6"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                        value="yes"
+                    >
+                    <label for="newsletter">
+                        Subscribe to my newsletter
+                    </label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+</body>
+</html>
